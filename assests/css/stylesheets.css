@@ -1,0 +1,173 @@
+.backgroundColor {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 900%;
+	animation: gradient 15s ease infinite;
+    font-family: Roboto;
+}
+
+.backgroundColor1 {
+    background: linear-gradient(-45deg,#434343,#1b1b1b);
+    background-size: 400% 900%;
+    animation: gradient 12s ease infinite;
+    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+    }
+   
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#container {
+    background: #f7f7f7;
+    /* border: 1px solid grey; */
+    width: 60%;
+    margin: 100px auto;
+    box-shadow:0 0 5px (rgb(0,0,0, 0.5));
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+} 
+.heading {
+    background: #2980b9;
+    /* background: #162027; */
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: normal;
+    text-align: center;
+    
+}
+.heading1 {
+    /* background: #2980b9; */
+    background: #162027;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    
+}
+.ulLargeText {
+    font-size: 1.8rem;
+    padding: 8px 0px;
+}
+
+li {
+    background: white;
+    height: 40px;
+    line-height: 40px;
+
+    
+}
+
+li:nth-child(2n) {
+    background-color: #e0dede;
+}
+
+input {
+    font-size: 26px;
+    background-color: #e0dede;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+    width: 100%;
+    border:3px rgb(0, 0, 0);
+    color:gray;
+}
+input:focus {
+    background: white;
+    /* border: 3px solid #2980b9; */
+    border: 3px solid lightgray;
+    outline: none;
+}
+
+
+span {
+    background-color: #e73c7e;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    opacity: 0;
+}
+
+li:hover span{
+width: 40px;
+transition: 0.2s linear;
+opacity: 1.0;
+}
+
+.fa-recycle {
+    padding-top: 3px;
+    padding-right: 20px;
+    float: right;
+    opacity: .5;
+}
+.fa-recycle:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+.fa-fill-drip  {
+    padding-top: 3px;
+    float: right;
+    opacity: .5;
+}
+.fa-fill-drip:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.fa-pen {
+    float: left;
+    padding-top: 3px;
+    opacity: .5;
+    padding-right: 20px;
+}
+
+.fa-pen:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+.fa-text-height {
+    padding-top: 3px;
+    float: left;
+    opacity: .5;
+}
+
+.fa-text-height:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+  .heading {
+      font-size: 1.4rem;
+      padding: 6px;
+  }
+  .heading1 {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+};
+
