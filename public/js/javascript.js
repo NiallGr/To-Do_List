@@ -37,8 +37,40 @@ $(".fa-fill-drip").click(function() {
     $("h1").toggleClass("heading heading1");
 
 });
-
+// Change Text size
 $(".fa-text-height").click(function() {
     $("ul").toggleClass("ulLargeText");
 });
+
+
+
+// Getting Email to Log to the console.
+$("form").on('keypress', function(mail) {
+	// if(mail.which == 13) {
+		mail.preventDefault();
+		//getting data from html file
+		var email = $("#email").val().trim();
+	     var list = $("ul").text();
+	//data to be sent 
+	     var data = {
+			email,
+			 list
+		}
+		 //sending data to server
+		$.post("/email", data, function(){
+			console.log("Server recieve our data");
+		});
+	
+	//Console Log the results of enter
+	var x = document.getElementById("email").value;
+         console.log(x);
+	 var y = $( "ul" ).each(function(todolist) {
+	console.log( todolist + " : " + $( this ).text() );
+	});
+	// clear input *Still in work*
+	// $("form").val("");
+});
+
+
+
 

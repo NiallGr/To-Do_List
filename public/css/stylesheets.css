@@ -1,10 +1,10 @@
 .backgroundColor {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 900%;
-	animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #0e6281 , #23a6d5, #48bee9,#6fbcd8,#d4e3e9);
+	background-size: 400% 700%;
+	animation: gradient 10s ease infinite;
     font-family: Roboto;
 }
-
+/* Background Change */
 .backgroundColor1 {
     background: linear-gradient(-45deg,#434343,#1b1b1b);
     background-size: 400% 900%;
@@ -28,7 +28,7 @@
     /* border: 1px solid grey; */
     width: 60%;
     margin: 100px auto;
-    box-shadow:0 0 5px (rgb(0,0,0, 0.5));
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .completed {
@@ -169,5 +169,50 @@ opacity: 1.0;
     font-size: 1.4rem;
     padding: 6px;
   }
+  
 };
 
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  
+}
+
+.topnav .navInfo {
+    
+    background-color: #e0dede;
+    position: absolute;
+    width: 17%;
+    padding: 5px;
+    margin-top : 4%; 
+    margin-left: 2px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+    font-size: 1rem;
+    float: initial;
+    border: none;
+    outline:none;
+    box-shadow: 0 8px 6px -6px black;
+}
+.topnav .navInfo::after {
+    content: " ";
+
+} 
+.topnav:hover .navInfo {
+    visibility: visible;
+    opacity: 1;
+}
+
+#email {
+    width: 18%;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    float: left;
+    border: none;
+    outline:none;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+
+ 

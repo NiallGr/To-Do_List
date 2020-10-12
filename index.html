@@ -4,13 +4,21 @@
 
         <title>Todo List</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="assests\css\stylesheets.css">
+        <link rel="stylesheet" type="text/css"   href="/css/stylesheets.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="assests/js/lib/jquery-3.5.1.min.js"></script> 
+        
         <link rel="stylesheet" href="">
     </head>
     <body class="backgroundColor">
      
+        <div class="topnav" data-tip="This is the text of the tooltip2">
+          <form>
+			   <input type="email" id="email" name="email" placeholder="email here">
+			</form> 
+          <p class="navInfo">Add Email to get individual To-Do list mailed</p>
+          </div>
+
      <div id="container">
          <h1 class="heading">To-Do<i class="fas fa-pen"></i><i class="fas fa-text-height"></i><i class="fas fa-fill-drip"></i><i class="fas fa-recycle"></i></h1>
          <input type="text" placeholder="Add New Todo">
@@ -28,6 +36,5 @@
          </ul>
      </div>
        
-        <script type="text/javascript" src="assests\js\javascript.js"></script>
+        <script type="text/javascript" src="/js/javascript.js"></script>
     </body>
-</html>
