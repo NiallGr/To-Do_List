@@ -1,5 +1,9 @@
 ﻿# To-Do_List
- A responsive to-do list that lets the user email their custom to-do list to there email.
+ A responsive to-do list that lets the user email their custom to-do.
+ 
+ Backend:
+ Node.js
+ Express
 
 **** Email Functionality *****
 Sign up for Mailgun.
